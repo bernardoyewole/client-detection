@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/*-----------Basic Reset---------------*/
+
+* {
+    margin: 0; 
+    padding: 0;
+    outline: 0;
+    border-style: none;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font: inherit;   
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Lato", "Open Sans", Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    background-color: #191720;
+}
+
+.container {
+    width: min(100% - 30px, 1200px);
+    margin-inline: auto;
+    height: 100%;
+}
+
+/*----------------Main CSS-------------------*/
+
+main {
+    height: 100%;
+}
+
+.properties{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.properties div + div {
+    margin-top: 20px;
+}
+
+.system, .window, .battery {
+    border: 2px solid #27232c;
+    width: 400px;
+    border-radius: 5px;
+}
+
+h1 {
+    background-color: #27232c;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 0px 8px 0px;
+    text-align: center;
+}
+
+p {
+    color: #fff;
+    
+}
+
+.info {
+    padding: 10px 0px 10px 15px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 8px 8px;
+    width: 400px;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: #28A724;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.offline {
+    background-color: #c40000;
+}
